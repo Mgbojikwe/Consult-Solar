@@ -1,0 +1,406 @@
+/*The Entire Webpage*/
+*{
+    box-sizing: border-box;
+}
+    body{
+        margin: 0;
+}
+    /*Web Title*/
+#header{
+    text-align: left;
+    padding: 13px;
+    padding-left: 50px;
+    font-size: 25px;
+    background-color: white;
+}
+span{
+    color:cadetblue;
+}
+    /*Navigation Bar*/
+#list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:dimgray;
+}
+li.ex1{
+    float: left;
+    font-size: 18px;
+    padding-left: 50px;
+}
+li#dropdown{
+    display: inline-block;
+}
+li a, #dropbtn{
+    display: inline-block;
+    background-color:dimgray;
+    color: white;
+    text-align: center;
+    padding: 28px 16px;
+    text-decoration: none;
+    width: 150px;
+}
+#dropcontent{
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    overflow:auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+#dropcontent a{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+#dropcontent a:hover {background-color: cadetblue}
+#dropdown:hover #dropcontent {
+    display: block;
+}
+a:hover, #dropdown:hover #dropbtn {
+    background-color: cadetblue;
+}
+#active {background-color: cadetblue}
+    /*Header Image*/
+#headerimage{
+    width: 100%;
+    height: 400px;
+    background-image: url("./Images/security-265130_1920.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+    /*1st Div*/
+#flexcontainer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color:azure;
+}
+#flexcontainer #box{
+    width: 33.33%;
+    text-align: center;
+    line-height: 50px;
+}
+#flexcontainer #boxi{
+    width: 33.33%;
+    text-align: center;
+    line-height: 50px;
+}
+p.ex2{
+    padding-left: 130px;
+    font-size: 20px;
+    text-align: left;
+}
+#securityi{
+    border-radius:25px;
+}
+#securityii{
+    border-radius:25px;
+}
+#ok{
+    font-size:25px;
+    visibility:hidden;
+}
+#oh{
+    font-size:25px;
+    visibility:hidden;
+}
+    /*2nd Div*/
+#secondcontainer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+#secondcontainer #square{
+    width: 70%;
+    text-align: center;
+    padding-top: 10px;
+    line-height: 30px;
+    margin:30px 20px 0 20px;
+}
+#secondcontainer #squaree{
+    width: 30%;
+    line-height: 50px;
+    margin:60px 20px 0 20px;
+}
+#securityiii{
+    border-radius:25px;
+}
+    /*3rd Div*/
+#thirdcontainer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+#thirdcontainer #circle{
+    width: 55%;
+    line-height: 30px;
+    margin:0 40px 0 20px;
+}
+#securityiv{
+    border-radius:25px;
+}
+    /*this set of code might just be useless*/
+#secondcontainer #circlee{
+    width: 45%;
+    line-height: 50px;
+    margin:60px 20px 0 40px;
+}
+    /*4th Div this is a header*/
+#fourthcontainer{
+    display: flex;
+    justify-content: center;
+    background-color:azure;
+}
+    /*Last Div*/
+#lastcontainer{
+    display: flex;
+    justify-content: center;
+    background-color:azure;
+}
+#lastcontainer #octagon{
+    width: 50%;
+    margin: 0 80px 0 80px;
+    line-height: 40px;
+    font-size:18px;
+    padding: 10px;
+}
+#services{
+    list-style-image: url("./Images/images.png")
+}
+    /*link and footer*/
+#linkcontainer{
+    display: flex;
+    padding-left: 90px;
+    background-color:azure;
+    font-size:18px;
+}
+#footer{
+    display: flex;
+    background-color:cadetblue;
+    justify-content: center;
+    font-size:18px;
+    padding: 5px;
+}
+
+/*Designing For Mobile 1st*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #header{
+         font-size: 10px;}
+    #headerimage{
+        height: 180px;
+    }
+        /*1st Div*/
+    #flexcontainer{
+        flex-direction: column;
+    }
+    #flexcontainer #box{
+        width: 100%;
+    }
+    
+#flexcontainer #boxi{
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+}
+    #securityii{
+        display: none;
+    }
+    #securityi{
+        width: 100%;
+        height:auto;
+        padding: 0 20px;
+    }
+    #ok{
+        visibility: visible;
+        font-size: 20px;
+    }
+    #oh{
+        display: none;
+    }
+    #flexcontainer #box{
+        text-align: center;
+    }
+    p.ex2{
+        padding-left: 20px;
+        font-size: 20px;
+        text-align: left;
+    }    
+    p.ex2{
+        font-size: 20px;
+    }
+    #secondcontainer{
+        flex-direction: column;
+    }
+    #secondcontainer #square{
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+    #secondcontainer #squaree{
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+    #securityiii{
+        width: 100%;
+        height:auto;
+    }
+    #thirdcontainer{
+        flex-direction: column;
+    }
+    #thirdcontainer #circle{
+        width: 100%;
+        margin:0;
+        padding: 20px;
+    }
+    #thirdcontainer #circlee{
+        width: 100%;
+        height:auto;
+        padding: 20px;
+    }
+    #securityiv{
+        width: 100%;
+        height:auto;
+    }
+    #lastcontainer{
+        flex-direction: column;
+    }
+    #lastcontainer #octagon{
+        width: 100%;
+        margin: 0;
+        padding:0 10px 0 10px;
+    }
+    #linkcontainer{
+        padding: 10px;
+    }   
+    }
+    
+    /* Small devices (portrait tablets and large phones, 600px to 900px) */
+    @media screen and (max-width: 900px) and (min-width: 600px){
+        #header{
+            font-size: 17px;}
+       #headerimage{
+           height: 180px;
+       }
+           /*1st Div*/
+       #flexcontainer{
+           flex-direction: column;
+       }
+       #flexcontainer #box{
+           width: 100%;
+       }
+       #flexcontainer #boxi{
+        width: 100%;
+        text-align: center;
+        line-height: 50px;
+       }    
+       #securityii{
+           display: none;
+       }
+       #securityi{
+           width: 100%;
+           height:auto;
+           padding: 0 20px;
+       }
+       #ok{
+           visibility: visible;
+           font-size: 20px;
+       }
+       #oh{
+           display: none;
+       }
+       #flexcontainer #box{
+           text-align: center;
+       }
+       p.ex2{
+        padding-left: 50px;
+        font-size: 20px;
+        text-align: left;
+    }    
+       p.ex2{
+           font-size: 20px;
+       }
+       #secondcontainer{
+           flex-direction: column;
+       }
+       #secondcontainer #square{
+           width: 100%;
+           margin: 0;
+           padding: 10px;
+       }
+       #secondcontainer #squaree{
+           width: 100%;
+           margin: 0;
+           padding: 20px;
+       }
+       #securityiii{
+           width: 100%;
+           height:auto;
+       }
+       #thirdcontainer{
+           flex-direction: column;
+       }
+       #thirdcontainer #circle{
+           width: 100%;
+           margin:0;
+           padding: 20px;
+       }
+       #thirdcontainer #circlee{
+           width: 100%;
+           height:auto;
+           padding: 20px;
+       }
+       #securityiv{
+           width: 100%;
+           height:auto;
+       }
+       #lastcontainer{
+           flex-direction: column;
+       }
+       #lastcontainer #octagon{
+           width: 100%;
+           margin: 0;
+           padding:0 10px 0 10px;
+       }
+       #linkcontainer{
+           padding: 10px;
+       }   
+    }
+    
+    
+    /* Large devices (laptops/desktops, 900px and up) */
+    @media screen and (max-width: 1200px) and (min-width: 900px){
+        #ok{
+            font-size:10px;
+            visibility:hidden;
+        }
+        #oh{
+            font-size:10px;
+            visibility:hidden;
+        }  
+        p.ex2{
+            padding-left: 80px;
+            font-size: 20px;
+            text-align: left;
+        }        
+        #securityi{
+            width:80%;
+        }
+        #securityii{
+            width:80%;
+        }    
+        #secondcontainer #square{
+            width: 50%;
+        }
+        #secondcontainer #squaree{
+            width: 50%;
+        }
+    } 
+
+
+          
